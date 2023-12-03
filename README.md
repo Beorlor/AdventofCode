@@ -27,3 +27,5 @@ Scala : Mélange de programmation fonctionnelle et orientée objet.
 Objective-C : Runtime Objective-C et paradigme de message-passing.
 Visual Basic : Développement rapide d'applications pour Windows.
 R : Analyse statistique et visualisation de données.
+
+ketlin / super pascal / brainfuck
