@@ -21,7 +21,7 @@ sumPartNumbers schematic = sum [read num | (num, startPos) <- findAllNumbers sch
     findAllNumbers sch = concatMap (findNumbersInRow sch) [0..length sch - 1]
 
     findNumbersInRow :: [[Char]] -> Int -> [(String, (Int, Int))]
-    findNumbersInRow sch row = go 0 []
+    findNumbersInRow sch row = go 0 []a
       where
         go col acc
           | col >= length (head sch) = acc
