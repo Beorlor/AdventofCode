@@ -1,49 +1,51 @@
-function parse_cards(cards_data)
+-- Function to parse cards from a string
+local function parseCards(input)
     local cards = {}
-    for line in cards_data:gmatch("[^\r\n]+") do
-        local winning_numbers_str, player_numbers_str = line:match("Card %d+: (.+) %| (.+)")
-        local winning_numbers = {}
-        for number in winning_numbers_str:gmatch("%d+") do
-            table.insert(winning_numbers, tonumber(number))
+    for line in input:gmatch("[^\r\n]+") do
+        local winning, player = line:match(":%s*(.-)%s*|%s*(.*)")
+        local card = {
+            winning = {},
+            player = {}
+        }
+        for number in winning:gmatch("%d+") do
+            table.insert(card.winning, tonumber(number))
         end
-
-        local player_numbers = {}
-        for number in player_numbers_str:gmatch("%d+") do
-            table.insert(player_numbers, tonumber(number))
+        for number in player:gmatch("%d+") do
+            table.insert(card.player, tonumber(number))
         end
-
-        table.insert(cards, {winning = winning_numbers, player = player_numbers})
+        table.insert(cards, card)
     end
     return cards
 end
 
-function calculate_card_points(card)
+-- Function to calculate points for a card
+local function calculateCardPoints(card)
     local matches = 0
-    for _, num in ipairs(card.player) do
-        for _, win_num in ipairs(card.winning) do
-            if num == win_num then
+    for _, pNum in ipairs(card.player) do
+        for _, wNum in ipairs(card.winning) do
+            if pNum == wNum then
                 matches = matches + 1
+                break
             end
         end
     end
-    return matches > 0 and 2 ^ (matches - 1) or 0
+    return matches > 0 and math.pow(2, matches - 1) or 0
 end
 
--- Read cards data from input.txt
+-- Reading the input from a file
 local file = io.open("input.txt", "r")
 if not file then
-    print("Failed to open input.txt")
+    print("Error: Could not open input.txt")
     return
 end
-
-local cards_data = file:read("*all")
+local input = file:read("*all")
 file:close()
 
--- Process the cards and calculate the total points
-local cards = parse_cards(cards_data)
-local total_points = 0
+-- Calculate total points
+local cards = parseCards(input)
+local totalPoints = 0
 for _, card in ipairs(cards) do
-    total_points = total_points + calculate_card_points(card)
+    totalPoints = totalPoints + calculateCardPoints(card)
 end
 
-print("Total Points:", total_points)
+print("Total Points:", totalPoints)
