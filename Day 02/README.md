@@ -1,3 +1,5 @@
+Similaire au c
+
 Regex
 
 preg_match('/^Game (\d+): (.+)$/', $line, $matches);
