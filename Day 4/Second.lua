@@ -56,7 +56,6 @@ local function calculateTotalScratchcards(cards)
                     instances = 1
                 }
                 table.insert(cards, copy)
-                processCard(copy)
             end
             totalScratchcards = totalScratchcards + card.instances
         end
