@@ -1,5 +1,7 @@
 01/12 : Pourquoi je me lance ce défi, ce que j'espere apprendre, les contraintes, les limites (le temps)
 
+Pour tout le defi on part du principe que le fichier est au bon endroit et le contenue a la bonne forme
+
 key moment comme un journal de bord
 
 C : Programmation de bas niveau et gestion manuelle de la mémoire.
