@@ -100,7 +100,7 @@ long	solving_second(long *seed, t_conv **converter)
 	int	i = 0;
 	long	lowest_location = LONG_MAX;
 	long	temp_location = 0;
-	int	actual = seed[0];
+	long	actual = seed[0];
 
 	while (seed[i] != -1)
 	{
@@ -114,6 +114,7 @@ long	solving_second(long *seed, t_conv **converter)
 		i++;
 		if (seed[i] != -1)
 			i++;
+		write(1, "ok\n", 3);
 	}
 	return (lowest_location);
 }
