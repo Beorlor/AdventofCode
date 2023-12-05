@@ -1,6 +1,4 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "Solution.h"
 
 //if a char is a space return 1
 static int	ft_isspace(char c)
@@ -94,4 +92,23 @@ long	*ft_split_number(char *str)
 	arr_number[num_count] = -1;
 	write_numb(arr_number, str);
 	return (arr_number);
+}
+
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
+{
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
+
+	ptr1 = (unsigned char *)str1;
+	ptr2 = (unsigned char *)str2;
+	while (n && *ptr1 && *ptr1 == *ptr2)
+	{
+		++ptr1;
+		++ptr2;
+		--n;
+	}
+	if (n)
+		return (*ptr1 - *ptr2);
+	else
+		return (0);
 }

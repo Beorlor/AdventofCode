@@ -3,10 +3,10 @@ CC = gcc
 CFLAGS = -I Include -Wall -Wextra -Werror
 
 # Define the target executable
-TARGET = First
+TARGET = Solution
 
 # Define the source and object files
-SRCS = $(wildcard Utils/*.c) First.c
+SRCS = $(wildcard Utils/*.c) Solution.c
 OBJS = $(SRCS:.c=.o)
 
 # The first rule is the default rule
