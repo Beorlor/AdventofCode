@@ -1,12 +1,14 @@
+Decouverte rapide, decouverte de certain concept (ci dessous), j'ai envie de passer plus de temps sur haskell
+Utilisation des tables dans le program (Cards)
+Retour du regex
+
 Introduction au concept :
-Tables / metatable pour simuler :
-programmation orientée objet tels que les objets, les classes, l'héritage
+Tables / metatable
 
-Pour réécrire le code précédent en utilisant la programmation orientée objet en Lua, nous utiliserons des tables pour créer des objets et simuler des classes et de l'héritage.
-Lua n'a pas de système de classe intégré comme d'autres langages orientés objet, mais sa flexibilité avec les tables et les métatables permet de simuler ce comportement.
+Table peut servir de array simple, de map, de dictionnaire, un mix des trois
+metatables sert a definir le behavior des operateurs pour les tables de manieres custom (par exemple a table myTable = {10, 15, 20}, si on dit que + append le nombre a la fin de la liste puis fait la somme, on peut avoir result = myTable + 15 qui ducoup sera egail a 70)
 
-
-La programmation orientée objet (POO) est un paradigme de programmation qui utilise des "objets" pour concevoir des logiciels. Les principaux concepts de la POO sont les objets, les classes et l'héritage. Voici une explication de chacun d'eux :
+Table bon outil, mais les array qui commence a index 1, cest ... special
 
 Objets :
 
