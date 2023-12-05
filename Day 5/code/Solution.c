@@ -104,6 +104,7 @@ long	solving_second(long *seed, t_conv **converter)
 
 	while (seed[i] != -1)
 	{
+		actual = seed[i];
 		while (actual < (seed[i] + seed[i+1]))
 		{
 			temp_location = find_location(actual, converter);
