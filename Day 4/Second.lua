@@ -19,6 +19,16 @@ local function parseCards(input)
     return cards
 end
 
+-- Function to find the index of an element in a table
+local function indexOf(table, element)
+    for index, value in ipairs(table) do
+        if value == element then
+            return index
+        end
+    end
+    return nil
+end
+
 -- Function to calculate the number of scratchcards won
 local function calculateTotalScratchcards(cards)
     local totalScratchcards = 0
@@ -32,7 +42,7 @@ local function calculateTotalScratchcards(cards)
             for _, otherCard in ipairs(cards) do
                 if otherCard ~= card then
                     for _, number in ipairs(otherCard.winning) do
-                        if table.indexOf(card.player, number) then
+                        if indexOf(card.player, number) then
                             matches = matches + 1
                             break
                         end
