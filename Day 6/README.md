@@ -15,3 +15,9 @@ Je narrive pas a resoudre le probleme 2 en ASM pour aujourdhui, je vais donc le 
 le but etait de siniciter a ASM et je pense que cet objectif a etait remplie,
 je bloque sur un detail technique du langage (qui ne sapprend pas en un jour je suppose (emoji rigolo))
 
+Je comprend seulement maintenant que pour un defi 1 jour, j'aurai du faire
+ASM z80 qui est beaucoup plus simple et plus adapter pour s'initier
+
+mais je vais poursuivre l'apprentissage de l'asm :
+https://www.nand2tetris.org
+https://www.tutorialspoint.com/assembly_programming/index.htm
