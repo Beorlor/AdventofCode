@@ -153,18 +153,25 @@ int main(void)
 	t_conv **converter;
 
 	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	{
+		perror("Error opening file");
+		return 1;
+	}
 	//array of chain list, cause we know how many converter we have (7), but not
 	//how many pair value they will have
-    converter = (t_conv **)malloc(sizeof(t_conv *) * 8);
-    if (!converter) {
-        printf("malloc failed");
-        return (1);
-    }
-    for (int i = 0; i < 8; i++) {
-        converter[i] = NULL;
-    }
-    seed = get_seed(fd);
-    get_conversion_unit(converter, fd);
+	converter = (t_conv **)malloc(sizeof(t_conv *) * 8);
+	if (!converter)
+	{
+		printf("malloc failed");
+		return (1);
+	}
+	for (int i = 0; i < 8; i++)
+	{
+		converter[i] = NULL;
+	}
+	seed = get_seed(fd);
+	get_conversion_unit(converter, fd);
 	printf("RESULT FIRST: %ld\n", solving_first(seed, converter));
 	printf("RESULT SECOND: %ld\n", solving_second(seed, converter));
 	free_all(seed, converter);
