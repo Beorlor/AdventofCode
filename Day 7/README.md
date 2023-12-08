@@ -13,6 +13,8 @@ with object and class + the syntax of dart, made it hard for me to make a workin
 program, so i found a dart solution and used the rest of available time to
 understand how it was made
 
+Solution from : https://github.com/tylersavery
+
 Langage oriente object
 
 Langage qui supporte flutter
