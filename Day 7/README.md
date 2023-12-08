@@ -1,3 +1,18 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TODO
+Je ne sais pas comment fonctionne le code
+le code nest pas commenter
+what the library does
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Kind of a failure today :
+
+I tried to code it myself, but i was not able too, the logic part was easy,
+i was able to find the answer pretty fast in python, but my first encounter
+with object and class + the syntax of dart, made it hard for me to make a working
+program, so i found a dart solution and used the rest of available time to
+understand how it was made
+
 Langage oriente object
 
 Langage qui supporte flutter
