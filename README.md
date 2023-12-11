@@ -26,8 +26,9 @@ Lua : Intégration dans les systèmes embarqués et les jeux vidéo.
 Dart : Développement multiplateforme avec Flutter.
 Swift : Gestion des optionals et patterns de conception modernes pour le développement iOS.
 Scala : Mélange de programmation fonctionnelle et orientée objet.
-Objective-C : Runtime Objective-C et paradigme de message-passing.
+Elixir : fonctional langage
 Visual Basic : Développement rapide d'applications pour Windows.
 R : Analyse statistique et visualisation de données.
 
-ketlin / super pascal / brainfuck
+ketlin / super pascal / brainfuck / Objective-C (remplacer par Elixir pour le
+												defi car probleme compilation)
