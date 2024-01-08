@@ -4,6 +4,16 @@ Pour tout le defi on part du principe que le fichier est au bon endroit et le co
 
 key moment comme un journal de bord
 
+Python
+PHP
+Haskell
+Lua
+C
+ASM
+Dart
+Elixir
+
+
 C : Programmation de bas niveau et gestion manuelle de la mémoire.
 Rust : Système de propriété et d'emprunt pour une gestion de la mémoire sûre.
 Python : Compréhensions de listes et manipulation aisée des structures de données.
@@ -17,7 +27,7 @@ Assembly : Programmation au niveau des instructions du processeur.
 Fortran : Calculs numériques et manipulation d'arrays.
 COBOL : Programmation de fichiers séquentiels et traitement par lots.
 Zig : Approche moderne de la programmation système avec un focus sur la sécurité et la simplicité.
-SQL : Requêtes sur des bases de données relationnelles.
+Kotlin : Développement Android sous java
 Bash : Scripting shell et automatisation des tâches système.
 C# : LINQ pour des requêtes de données intégrées et expressives.
 TypeScript : Typage statique sur JavaScript pour une programmation front-end robuste.
