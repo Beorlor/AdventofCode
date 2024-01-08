@@ -12,6 +12,8 @@ C
 ASM
 Dart
 Elixir
+R
+c++
 
 
 C : Programmation de bas niveau et gestion manuelle de la mémoire.
