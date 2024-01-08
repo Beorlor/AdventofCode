@@ -4,6 +4,11 @@ Pour tout le defi on part du principe que le fichier est au bon endroit et le co
 
 key moment comme un journal de bord
 
+Apres le day 8, les dossiers sont moins complet car trop de travail a allouer a cette tache et pas
+assez de temps
+
+Already done :
+
 Python
 PHP
 Haskell
